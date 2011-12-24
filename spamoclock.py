@@ -12,11 +12,13 @@ stdscr.keypad(1)# special cursor & nav keys get return values to curses
 
 
 begin_x = 20 ; begin_y = 7
-heigh = 5; width = 40
-win = curses.newwin(heigh,width,begin_y,begin_x) #note coord syntax is (y,x)
+height = 5; width = 40
+win = curses.newwin(height,width,begin_y,begin_x) #note coord syntax is (y,x)
 
 #content
-addstr('this is the world')
+stdscr.addstr("This is the world.")
+curses.echo()
+c = stdscr.getch()
 
 curses.nocbreak(); stdscr.keypad(0); curses.echo()
 
