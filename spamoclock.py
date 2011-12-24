@@ -16,8 +16,6 @@ heigh = 5; width = 40
 win = curses.newwin(heigh,width,begin_y,begin_x) #note coord syntax is (y,x)
 
 #content
-str_hellow ="hellow"
-addstr(str_hellow)
 addstr('this is the world')
 
 curses.nocbreak(); stdscr.keypad(0); curses.echo()
